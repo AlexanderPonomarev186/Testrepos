@@ -223,7 +223,7 @@ file_name = input()
 if os.stat(file_name).st_size == 0:
     print("Пустой файл")
 else:
-    data_lines = csv_reader("vacancies_medium.csv")
+    data_lines = csv_reader(file_name)
     if len(data_lines) == 0:
         print("Нет данных")
     else:
